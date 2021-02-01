@@ -15,10 +15,11 @@ dightsContainer.addEventListener('click',function(event){
   if(isNaN(digit)){
     if(digit==="C"){
         let typedInput=document.querySelector("#typePin");
-        typedInput.value=" ";
+        typedInput.value="";
     }
-    if(digit==="B"){
-      
+    else if(digit==="B"){
+        let typedInput=document.querySelector("#typePin");
+        typedInput.value = typedInput.value.substring(0, typedInput.value.length - 1);
     }
   }
   else{
